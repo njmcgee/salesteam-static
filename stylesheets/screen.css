@@ -132,20 +132,12 @@ textarea {
   padding: 0.2em 0;
 }
 
-/* line 13, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 body {
   background: white;
   font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
-}
-/* line 17, ../sass/screen.scss */
-body.home h1 {
-  background: transparent url(/images/h1.png);
-  width: 298px;
-  height: 42px;
-  margin: 35px auto;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
+  color: #4a4a4a;
+  font-weight: 300;
 }
 
 /* line 27, ../sass/screen.scss */
@@ -156,7 +148,8 @@ body.home h1 {
 
 /* line 31, ../sass/screen.scss */
 #feature.container {
-  width: 1050px;
+  width: 970px;
+  padding: 40px;
   margin: 0 auto;
   background: #fdfdfd;
   border: 1px solid #e0dbd8;
@@ -168,7 +161,100 @@ body.home h1 {
   -webkit-box-shadow: inset 0 0 84px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0 0 84px 0 rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 0 84px 0 rgba(0, 0, 0, 0.1);
-  height: 400px;
+  font-size: 20px;
+}
+
+/* line 46, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  color: #7a7eb4;
+}
+
+/* line 50, ../sass/screen.scss */
+h2 {
+  margin-bottom: 30px;
+}
+
+/* line 53, ../sass/screen.scss */
+ul {
+  list-style: disc;
+  margin-left: 20px;
+  padding-left: 20px;
+  margin-bottom: 1.3em;
+}
+/* line 58, ../sass/screen.scss */
+ul li {
+  margin-bottom: 0.7em;
+}
+
+/* line 62, ../sass/screen.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 69, ../sass/screen.scss */
+.button {
+  color: white;
+  font-weight: 800;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #92d26a), color-stop(5%, #80cb51), color-stop(100%, #54af46));
+  background-image: -webkit-linear-gradient(#92d26a, #80cb51 5%, #54af46);
+  background-image: -moz-linear-gradient(#92d26a, #80cb51 5%, #54af46);
+  background-image: -o-linear-gradient(#92d26a, #80cb51 5%, #54af46);
+  background-image: linear-gradient(#92d26a, #80cb51 5%, #54af46);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #7ab756;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
+  display: inline-block;
+}
+/* line 77, ../sass/screen.scss */
+.button:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #92d26a), color-stop(100%, #80cb51));
+  background-image: -webkit-linear-gradient(#92d26a, #80cb51);
+  background-image: -moz-linear-gradient(#92d26a, #80cb51);
+  background-image: -o-linear-gradient(#92d26a, #80cb51);
+  background-image: linear-gradient(#92d26a, #80cb51);
+}
+/* line 80, ../sass/screen.scss */
+.button.big {
+  font-size: 20px;
+  padding: 15px 50px;
+}
+
+/* line 91, ../sass/screen.scss */
+body.home h1 {
+  background: url(/images/h1.png);
+  width: 298px;
+  height: 42px;
+  margin: 35px auto;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* line 98, ../sass/screen.scss */
+body.home h2 {
+  font-size: 46px;
+  line-height: 48px;
+}
+/* line 102, ../sass/screen.scss */
+body.home #feature {
+  width: 530px;
+  position: relative;
+  padding-left: 470px;
+  padding-bottom: 80px;
+}
+/* line 107, ../sass/screen.scss */
+body.home #feature:before {
+  content: "";
+  position: absolute;
+  background: url(/images/globe.png);
+  width: 390px;
+  height: 342px;
+  left: 50px;
+  top: 40px;
 }
 
 /* ==========================================================================
