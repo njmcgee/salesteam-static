@@ -75,6 +75,7 @@ a {
 .button {
   color: $white;
   font-weight: $bold;
+  background: #54af46;
   @include background-image(linear-gradient(#92d26a, #80cb51 5%, #54af46));
   @include border-radius(5px);
   border: 1px solid #7ab756;
