@@ -132,7 +132,7 @@ textarea {
   padding: 0.2em 0;
 }
 
-/* line 20, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 body {
   background: white;
   font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
@@ -140,13 +140,13 @@ body {
   font-weight: 300;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 .container {
   width: 940px;
   margin: 0 auto;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 #feature.container {
   width: 970px;
   padding: 40px;
@@ -164,35 +164,41 @@ body {
   font-size: 20px;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
   color: #7a7eb4;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 h2 {
   margin-bottom: 30px;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
+h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+/* line 59, ../sass/screen.scss */
 ul {
   list-style: disc;
   margin-left: 20px;
   padding-left: 20px;
   margin-bottom: 1.3em;
 }
-/* line 58, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 ul li {
   margin-bottom: 0.7em;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 a {
   text-decoration: none;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 .button {
   color: white;
   font-weight: 800;
@@ -210,7 +216,7 @@ a {
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
   display: inline-block;
 }
-/* line 77, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 .button:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #92d26a), color-stop(100%, #80cb51));
   background-image: -webkit-linear-gradient(#92d26a, #80cb51);
@@ -218,13 +224,13 @@ a {
   background-image: -o-linear-gradient(#92d26a, #80cb51);
   background-image: linear-gradient(#92d26a, #80cb51);
 }
-/* line 80, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .button.big {
   font-size: 20px;
   padding: 15px 50px;
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 body.home h1 {
   background: url(/images/h1.png);
   width: 298px;
@@ -234,19 +240,19 @@ body.home h1 {
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 98, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 body.home h2 {
   font-size: 46px;
   line-height: 48px;
 }
-/* line 102, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 body.home #feature {
   width: 530px;
   position: relative;
   padding-left: 470px;
   padding-bottom: 80px;
 }
-/* line 107, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 body.home #feature:before {
   content: "";
   position: absolute;
@@ -255,6 +261,87 @@ body.home #feature:before {
   height: 342px;
   left: 50px;
   top: 40px;
+}
+
+/* line 123, ../sass/screen.scss */
+#how-it-works {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+/* line 130, ../sass/screen.scss */
+#how-it-works > li {
+  width: 264px;
+  float: left;
+  border: 1px solid #e0dbd8;
+  background: #fef3ed;
+  padding: 230px 20px 20px 20px;
+  position: relative;
+  min-height: 165px;
+}
+/* line 138, ../sass/screen.scss */
+#how-it-works > li#create, #how-it-works > li#select {
+  margin-right: 10px;
+}
+/* line 141, ../sass/screen.scss */
+#how-it-works > li#create {
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+/* line 143, ../sass/screen.scss */
+#how-it-works > li#create:before {
+  content: "";
+  position: absolute;
+  width: 273px;
+  height: 207px;
+  top: 16px;
+  left: 20px;
+  background: url(/images/create.png);
+}
+/* line 153, ../sass/screen.scss */
+#how-it-works > li#select:before {
+  content: "";
+  position: absolute;
+  width: 271px;
+  height: 204px;
+  top: 14px;
+  left: 20px;
+  background: url(/images/select.png);
+}
+/* line 162, ../sass/screen.scss */
+#how-it-works > li#monitor {
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* line 164, ../sass/screen.scss */
+#how-it-works > li#monitor:before {
+  content: "";
+  position: absolute;
+  width: 253px;
+  height: 196px;
+  top: 16px;
+  left: 23px;
+  background: url(/images/monitor.png);
+}
+/* line 173, ../sass/screen.scss */
+#how-it-works > li h3 {
+  text-align: center;
+}
+/* line 176, ../sass/screen.scss */
+#how-it-works > li ul {
+  margin-left: 15px;
+  margin-bottom: 0;
 }
 
 /* ==========================================================================

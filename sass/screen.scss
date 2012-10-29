@@ -13,6 +13,8 @@ $book: 300;
 $bold: 800;
 $secondary-color: #7a7eb4;
 $text-color: #4a4a4a;
+$stroke-color: #e0dbd8;
+$border-big: 10px;
 
 // Structure 
 // =================================
@@ -33,8 +35,8 @@ body {
   padding: 40px;
   margin: 0 auto;
   background: #fdfdfd;
-  border: 1px solid #e0dbd8;
-  @include border-radius(10px);
+  border: 1px solid $stroke-color;
+  @include border-radius($border-big);
   @include single-box-shadow(rgba(black, 0.1), 0, 0, 84px, 0, true);
   font-size: 20px;
 
@@ -49,6 +51,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 h2 {
   margin-bottom: 30px;
+}
+h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
 }
 ul {
   list-style: disc;
@@ -105,13 +111,74 @@ body.home {
     padding-left: 470px;
     padding-bottom: 80px;
     &:before {
-      content: "";
-      position: absolute;
+      @include pseudo-absolute;
       background: url(/images/globe.png);
       width: 390px;
       height: 342px;
       left: 50px;
       top: 40px;
+    }
+  }
+}
+#how-it-works {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-top: -40px;
+  margin-bottom: 20px;
+  > li {
+    width: 264px;
+    float: left;
+    border: 1px solid $stroke-color;
+    background: #fef3ed;
+    padding: 230px 20px 20px 20px;
+    position: relative;
+    min-height: 165px;
+    &#create, &#select {
+      margin-right: 10px;
+    }
+    &#create {      
+      @include border-left-radius($border-big);
+      &:before {
+        @include pseudo-absolute;
+        width: 273px;
+        height: 207px;
+        top: 16px;
+        left: 20px;
+        background: url(/images/create.png);
+      }
+    }
+    &#select {
+      &:before {
+        @include pseudo-absolute;
+        width: 271px;
+        height: 204px;
+        top: 14px;
+        left: 20px;
+        background: url(/images/select.png);
+      }
+    }
+    &#monitor {
+      @include border-right-radius($border-big);
+      &:before {
+        @include pseudo-absolute;
+        width: 253px;
+        height: 196px;
+        top: 16px;
+        left: 23px;
+        background: url(/images/monitor.png);
+      }
+    }
+    h3 {
+      text-align: center;
+    }
+    ul {
+      margin-left: 15px;
+      margin-bottom: 0;
+      li {
+
+      }
     }
   }
 }

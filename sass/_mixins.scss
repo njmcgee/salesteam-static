@@ -3,3 +3,7 @@
   white-space: nowrap;
   overflow: hidden;
 }
+@mixin pseudo-absolute {
+  content: "";
+  position: absolute;
+}
