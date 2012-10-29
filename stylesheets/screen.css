@@ -256,7 +256,7 @@ body.home #feature {
 body.home #feature:before {
   content: "";
   position: absolute;
-  background: url(/images/globe.png);
+  background: url(../images/globe.png);
   width: 390px;
   height: 342px;
   left: 50px;
@@ -303,7 +303,7 @@ body.home #feature:before {
   height: 207px;
   top: 16px;
   left: 20px;
-  background: url(/images/create.png);
+  background: url(../images/create.png);
 }
 /* line 153, ../sass/screen.scss */
 #how-it-works > li#select:before {
@@ -313,7 +313,7 @@ body.home #feature:before {
   height: 204px;
   top: 14px;
   left: 20px;
-  background: url(/images/select.png);
+  background: url(../images/select.png);
 }
 /* line 162, ../sass/screen.scss */
 #how-it-works > li#monitor {
@@ -332,7 +332,7 @@ body.home #feature:before {
   height: 196px;
   top: 16px;
   left: 23px;
-  background: url(/images/monitor.png);
+  background: url(../images/monitor.png);
 }
 /* line 173, ../sass/screen.scss */
 #how-it-works > li h3 {
