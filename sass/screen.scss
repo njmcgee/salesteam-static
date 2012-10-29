@@ -4,13 +4,38 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3";
 @import "boilerplate";
+@import "mixins";
 
 $white: white;
 
 body {
   background: $white;
   font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+  &.home {
+    h1 {
+      background: transparent url(/images/h1.png);
+      width: 298px;
+      height: 42px;
+      margin: 35px auto;
+      @include hide-text;
+    }
+  }
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+#feature.container {
+  width: 1050px;
+  margin: 0 auto;
+  background: #fdfdfd;
+  border: 1px solid #e0dbd8;
+  @include border-radius(10px);
+  @include single-box-shadow(rgba(black, 0.1), 0, 0, 84px, 0, true);
+  height: 400px;
 }
 
 
