@@ -7,3 +7,10 @@
   content: "";
   position: absolute;
 }
+@mixin body-bg {
+  background: #fdfdfd;
+  border: 1px solid $stroke-color;
+  @include border-radius($border-big);
+  @include single-box-shadow(rgba(black, 0.1), 0, 0, 84px, 0, true);  
+  padding: 40px;
+}

@@ -6,6 +6,7 @@
 @import "compass/reset";
 @import "compass/css3";
 @import "boilerplate";
+@import "bootstrap-forms";
 @import "mixins";
 
 $white: white;
@@ -30,16 +31,16 @@ body {
   width: 940px;
   margin: 0 auto;
 }
+.body {
+  @include body-bg;  
+}
+#feature {
+  @include body-bg;  
+}
 #feature.container {
   width: 970px;
-  padding: 40px;
-  margin: 0 auto;
-  background: #fdfdfd;
-  border: 1px solid $stroke-color;
-  @include border-radius($border-big);
-  @include single-box-shadow(rgba(black, 0.1), 0, 0, 84px, 0, true);
+  margin: 0 auto;  
   font-size: 20px;
-
 }
 
 // Typography  
@@ -93,15 +94,14 @@ a {
 
 // Homepage  
 // =================================
-
-body.home {
-  h1 {
+h1 {
     background: url(../images/h1.png);
     width: 298px;
     height: 42px;
     margin: 35px auto;
     @include hide-text;
   }
+body.home {  
   h2 {
     font-size: 46px;
     line-height: 48px;
@@ -110,7 +110,7 @@ body.home {
     width: 530px;
     position: relative;
     padding-left: 470px;
-    padding-bottom: 80px;
+    padding-bottom: 90px;
     &:before {
       @include pseudo-absolute;
       background: url(../images/globe.png);
@@ -127,7 +127,7 @@ body.home {
   padding: 0;
   overflow: hidden;
   margin-top: -40px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   > li {
     width: 264px;
     float: left;
