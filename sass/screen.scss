@@ -6,8 +6,11 @@
 @import "compass/reset";
 @import "boilerplate";
 
+$white: white;
+
 body {
-  background: red;
+  background: $white;
+  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
 }
 
 

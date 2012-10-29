@@ -132,9 +132,10 @@ textarea {
   padding: 0.2em 0;
 }
 
-/* line 9, ../sass/screen.scss */
+/* line 11, ../sass/screen.scss */
 body {
-  background: red;
+  background: white;
+  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
 }
 
 /* ==========================================================================
