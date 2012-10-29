@@ -1,0 +1,190 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+@import "boilerplate";
+@import "mixins";
+
+$white: white;
+$book: 300;
+$bold: 800;
+$secondary-color: #7a7eb4;
+$text-color: #4a4a4a;
+$stroke-color: #e0dbd8;
+$border-big: 10px;
+
+// Structure 
+// =================================
+
+body {
+  background: $white;
+  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;  
+  color: $text-color;
+  font-weight: $book;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+#feature.container {
+  width: 970px;
+  padding: 40px;
+  margin: 0 auto;
+  background: #fdfdfd;
+  border: 1px solid $stroke-color;
+  @include border-radius($border-big);
+  @include single-box-shadow(rgba(black, 0.1), 0, 0, 84px, 0, true);
+  font-size: 20px;
+
+}
+
+// Typography  
+// =================================
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $bold;
+  color: $secondary-color; 
+}
+h2 {
+  margin-bottom: 30px;
+}
+h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+ul {
+  list-style: disc;
+  margin-left: 20px;
+  padding-left: 20px;
+  margin-bottom: 1.3em;
+  li {
+    margin-bottom: 0.7em;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+// Generic  
+// =================================
+
+.button {
+  color: $white;
+  font-weight: $bold;
+  @include background-image(linear-gradient(#92d26a, #80cb51 5%, #54af46));
+  @include border-radius(5px);
+  border: 1px solid #7ab756;
+  @include text-shadow(rgba(black, 0.4) 0 1px 1px);
+  display: inline-block;
+  &:hover {
+    @include background-image(linear-gradient(#92d26a, #80cb51));
+  };
+  &.big {
+    font-size: 20px;
+    padding: 15px 50px;
+  }
+}
+
+
+// Homepage  
+// =================================
+
+body.home {
+  h1 {
+    background: url(/images/h1.png);
+    width: 298px;
+    height: 42px;
+    margin: 35px auto;
+    @include hide-text;
+  }
+  h2 {
+    font-size: 46px;
+    line-height: 48px;
+  }
+  #feature {
+    width: 530px;
+    position: relative;
+    padding-left: 470px;
+    padding-bottom: 80px;
+    &:before {
+      @include pseudo-absolute;
+      background: url(/images/globe.png);
+      width: 390px;
+      height: 342px;
+      left: 50px;
+      top: 40px;
+    }
+  }
+}
+#how-it-works {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-top: -40px;
+  margin-bottom: 20px;
+  > li {
+    width: 264px;
+    float: left;
+    border: 1px solid $stroke-color;
+    background: #fef3ed;
+    padding: 230px 20px 20px 20px;
+    position: relative;
+    min-height: 165px;
+    &#create, &#select {
+      margin-right: 10px;
+    }
+    &#create {      
+      @include border-left-radius($border-big);
+      &:before {
+        @include pseudo-absolute;
+        width: 273px;
+        height: 207px;
+        top: 16px;
+        left: 20px;
+        background: url(/images/create.png);
+      }
+    }
+    &#select {
+      &:before {
+        @include pseudo-absolute;
+        width: 271px;
+        height: 204px;
+        top: 14px;
+        left: 20px;
+        background: url(/images/select.png);
+      }
+    }
+    &#monitor {
+      @include border-right-radius($border-big);
+      &:before {
+        @include pseudo-absolute;
+        width: 253px;
+        height: 196px;
+        top: 16px;
+        left: 23px;
+        background: url(/images/monitor.png);
+      }
+    }
+    h3 {
+      text-align: center;
+    }
+    ul {
+      margin-left: 15px;
+      margin-bottom: 0;
+      li {
+
+      }
+    }
+  }
+}
+
+
+
+@import "media-queries";
+@import "helper";
+@import "print";
