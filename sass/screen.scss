@@ -55,6 +55,11 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   font-size: 26px;
   margin-bottom: 30px;
+  &.big {
+    font-size: 46px;
+    line-height: 58px;
+    margin-bottom: 0;
+  }
 }
 h3 {
   font-size: 26px;
@@ -71,6 +76,9 @@ ul {
 }
 a {
   text-decoration: none;
+}
+p {
+  margin-bottom: 1em;
 }
 
 // Generic  
@@ -111,12 +119,12 @@ input.error {
 // Homepage  
 // =================================
 h1 {
-    background: url(../images/h1.png);
-    width: 298px;
-    height: 42px;
-    margin: 35px auto;
-    @include hide-text;
-  }
+  background: url(../images/h1.png);
+  width: 298px;
+  height: 42px;
+  margin: 35px auto;
+  @include hide-text;
+}
 body.home {  
   h2 {
     font-size: 46px;
@@ -203,10 +211,16 @@ body.home {
     width: 350px;
     padding-left: 570px;
     position: relative;
+    min-height: 350px;
     &:before {
       @include globe;      
       left: 120px;
       top: 0;
+    }
+    &.success {
+      p {
+        width: 280px;
+      }
     }
   }
   form {

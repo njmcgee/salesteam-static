@@ -1229,31 +1229,42 @@ h2 {
   font-size: 26px;
   margin-bottom: 30px;
 }
+/* line 58, ../sass/screen.scss */
+h2.big {
+  font-size: 46px;
+  line-height: 58px;
+  margin-bottom: 0;
+}
 
-/* line 59, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 h3 {
   font-size: 26px;
   margin-bottom: 15px;
 }
 
-/* line 63, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 ul {
   list-style: disc;
   margin-left: 20px;
   padding-left: 20px;
   margin-bottom: 1.3em;
 }
-/* line 68, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 ul li {
   margin-bottom: 0.7em;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 a {
   text-decoration: none;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
+p {
+  margin-bottom: 1em;
+}
+
+/* line 87, ../sass/screen.scss */
 .button {
   color: white;
   font-weight: 800;
@@ -1272,7 +1283,7 @@ a {
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
   display: inline-block;
 }
-/* line 88, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 .button:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #92d26a), color-stop(100%, #80cb51));
   background-image: -webkit-linear-gradient(#92d26a, #80cb51);
@@ -1280,33 +1291,33 @@ a {
   background-image: -o-linear-gradient(#92d26a, #80cb51);
   background-image: linear-gradient(#92d26a, #80cb51);
 }
-/* line 91, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .button.big {
   font-size: 20px;
   padding: 15px 50px;
 }
-/* line 95, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .button.small {
   padding: 4px 18px;
 }
 
-/* line 99, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 input.error {
   border: 1px solid #b94a48;
   color: #b94a48;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .error {
   color: #b94a48;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .control-group {
   margin-bottom: 0;
 }
 
-/* line 113, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 h1 {
   background: url(../images/h1.png);
   width: 298px;
@@ -1317,19 +1328,19 @@ h1 {
   overflow: hidden;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 body.home h2 {
   font-size: 46px;
   line-height: 48px;
 }
-/* line 125, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 body.home #feature {
   width: 530px;
   position: relative;
   padding-left: 470px;
   padding-bottom: 90px;
 }
-/* line 130, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 body.home #feature:before {
   content: "";
   position: absolute;
@@ -1340,7 +1351,7 @@ body.home #feature:before {
   top: 40px;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 #how-it-works {
   list-style: none;
   margin: 0;
@@ -1349,7 +1360,7 @@ body.home #feature:before {
   margin-top: -40px;
   margin-bottom: 40px;
 }
-/* line 144, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 #how-it-works > li {
   width: 264px;
   float: left;
@@ -1359,11 +1370,11 @@ body.home #feature:before {
   position: relative;
   min-height: 165px;
 }
-/* line 152, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 #how-it-works > li#create, #how-it-works > li#select {
   margin-right: 10px;
 }
-/* line 155, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 #how-it-works > li#create {
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -1372,7 +1383,7 @@ body.home #feature:before {
   -webkit-border-bottom-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-/* line 157, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 #how-it-works > li#create:before {
   content: "";
   position: absolute;
@@ -1382,7 +1393,7 @@ body.home #feature:before {
   left: 20px;
   background: url(../images/create.png);
 }
-/* line 167, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 #how-it-works > li#select:before {
   content: "";
   position: absolute;
@@ -1392,7 +1403,7 @@ body.home #feature:before {
   left: 20px;
   background: url(../images/select.png);
 }
-/* line 176, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 #how-it-works > li#monitor {
   -moz-border-radius-topright: 10px;
   -webkit-border-top-right-radius: 10px;
@@ -1401,7 +1412,7 @@ body.home #feature:before {
   -webkit-border-bottom-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-/* line 178, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 #how-it-works > li#monitor:before {
   content: "";
   position: absolute;
@@ -1411,23 +1422,24 @@ body.home #feature:before {
   left: 23px;
   background: url(../images/monitor.png);
 }
-/* line 187, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 #how-it-works > li h3 {
   text-align: center;
 }
-/* line 190, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 #how-it-works > li ul {
   margin-left: 15px;
   margin-bottom: 0;
 }
 
-/* line 202, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .body#sign-up .container {
   width: 350px;
   padding-left: 570px;
   position: relative;
+  min-height: 350px;
 }
-/* line 206, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .body#sign-up .container:before {
   content: "";
   position: absolute;
@@ -1437,7 +1449,11 @@ body.home #feature:before {
   left: 120px;
   top: 0;
 }
-/* line 216, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
+.body#sign-up .container.success p {
+  width: 280px;
+}
+/* line 230, ../sass/screen.scss */
 .body#sign-up form label {
   display: none;
 }
