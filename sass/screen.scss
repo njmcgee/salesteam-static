@@ -16,6 +16,7 @@ $secondary-color: #7a7eb4;
 $text-color: #4a4a4a;
 $stroke-color: #e0dbd8;
 $border-big: 10px;
+$error: #B94A48;
 
 // Structure 
 // =================================
@@ -40,7 +41,8 @@ body {
 #feature.container {
   width: 970px;
   margin: 0 auto;  
-  font-size: 20px;
+  font-size: 20px;  
+  @include border-radius($border-big);
 }
 
 // Typography  
@@ -93,6 +95,16 @@ a {
   &.small {
     padding: 4px 18px;
   }
+}
+input.error {
+  border: 1px solid $error;
+  color: $error;
+}
+.error {
+  color: $error;
+}
+.control-group {
+  margin-bottom: 0;
 }
 
 
@@ -199,7 +211,7 @@ body.home {
   }
   form {
     input[type="text"], input[type="password"] {
-      display: block;
+      // display: block;
     }
     label {
       display: none;

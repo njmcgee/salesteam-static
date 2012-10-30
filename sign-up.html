@@ -31,18 +31,31 @@
             <option>looking for sales people</option>
             <option>a sales person</option>
           </select> -->
-          <label for="first-name">First name</label>
-          <input id="first-name" type="text" placeholder="First name">
-          <label for="last-name">First name</label>
-          <input id="last-name" type="text" placeholder="Last name">
-          <label for="company">Company</label>
-          <input id="company" type="text" placeholder="Company">
-          <label for="email">Email</label>
-          <input id="email" type="text" placeholder="Email address">
-          <label for="password">Password</label>
-          <input id="password" type="password" placeholder="Password">
-          <label for="confirm-password">Confirm password</label>
-          <input id="confirm-password" type="password" placeholder="Confirm password">
+          <div class="control-group">
+            <label for="first-name">First name</label>
+            <input id="first-name" type="text" placeholder="First name" class="error"> <!-- .error for form errors -->
+            <span class="help-inline error">Inline help text</span> <!-- Output span for error text -->
+          </div>
+          <div class="control-group">
+            <label for="last-name">First name</label>
+            <input id="last-name" type="text" placeholder="Last name">
+          </div>
+          <div class="control-group">
+            <label for="company">Company</label>
+            <input id="company" type="text" placeholder="Company">
+          </div>
+          <div class="control-group">
+            <label for="email">Email</label>
+            <input id="email" type="text" placeholder="Email address">
+          </div>
+          <div class="control-group">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Password">
+          </div>
+          <div class="control-group">
+            <label for="confirm-password">Confirm password</label>
+            <input id="confirm-password" type="password" placeholder="Confirm password">
+          </div>
           <button type="submit" class="small button">Create account</button>
         </form>
       </div>
