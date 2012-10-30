@@ -14,3 +14,9 @@
   @include single-box-shadow(rgba(black, 0.1), 0, 0, 84px, 0, true);  
   padding: 40px;
 }
+@mixin globe {
+  @include pseudo-absolute;
+  background: url(../images/globe.png);
+  width: 390px;
+  height: 342px;
+}

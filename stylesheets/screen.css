@@ -1231,33 +1231,34 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 53, ../sass/screen.scss */
 h2 {
+  font-size: 26px;
   margin-bottom: 30px;
 }
 
-/* line 56, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 h3 {
   font-size: 26px;
   margin-bottom: 15px;
 }
 
-/* line 60, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 ul {
   list-style: disc;
   margin-left: 20px;
   padding-left: 20px;
   margin-bottom: 1.3em;
 }
-/* line 65, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 ul li {
   margin-bottom: 0.7em;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 a {
   text-decoration: none;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 .button {
   color: white;
   font-weight: 800;
@@ -1276,7 +1277,7 @@ a {
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
   display: inline-block;
 }
-/* line 85, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .button:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #92d26a), color-stop(100%, #80cb51));
   background-image: -webkit-linear-gradient(#92d26a, #80cb51);
@@ -1284,13 +1285,17 @@ a {
   background-image: -o-linear-gradient(#92d26a, #80cb51);
   background-image: linear-gradient(#92d26a, #80cb51);
 }
-/* line 88, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .button.big {
   font-size: 20px;
   padding: 15px 50px;
 }
+/* line 93, ../sass/screen.scss */
+.button.small {
+  padding: 4px 18px;
+}
 
-/* line 97, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 h1 {
   background: url(../images/h1.png);
   width: 298px;
@@ -1301,19 +1306,19 @@ h1 {
   overflow: hidden;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 body.home h2 {
   font-size: 46px;
   line-height: 48px;
 }
-/* line 109, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 body.home #feature {
   width: 530px;
   position: relative;
   padding-left: 470px;
   padding-bottom: 90px;
 }
-/* line 114, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 body.home #feature:before {
   content: "";
   position: absolute;
@@ -1324,7 +1329,7 @@ body.home #feature:before {
   top: 40px;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 #how-it-works {
   list-style: none;
   margin: 0;
@@ -1333,7 +1338,7 @@ body.home #feature:before {
   margin-top: -40px;
   margin-bottom: 40px;
 }
-/* line 131, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 #how-it-works > li {
   width: 264px;
   float: left;
@@ -1343,11 +1348,11 @@ body.home #feature:before {
   position: relative;
   min-height: 165px;
 }
-/* line 139, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 #how-it-works > li#create, #how-it-works > li#select {
   margin-right: 10px;
 }
-/* line 142, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 #how-it-works > li#create {
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -1356,7 +1361,7 @@ body.home #feature:before {
   -webkit-border-bottom-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-/* line 144, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 #how-it-works > li#create:before {
   content: "";
   position: absolute;
@@ -1366,7 +1371,7 @@ body.home #feature:before {
   left: 20px;
   background: url(../images/create.png);
 }
-/* line 154, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 #how-it-works > li#select:before {
   content: "";
   position: absolute;
@@ -1376,7 +1381,7 @@ body.home #feature:before {
   left: 20px;
   background: url(../images/select.png);
 }
-/* line 163, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 #how-it-works > li#monitor {
   -moz-border-radius-topright: 10px;
   -webkit-border-top-right-radius: 10px;
@@ -1385,7 +1390,7 @@ body.home #feature:before {
   -webkit-border-bottom-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-/* line 165, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 #how-it-works > li#monitor:before {
   content: "";
   position: absolute;
@@ -1395,14 +1400,39 @@ body.home #feature:before {
   left: 23px;
   background: url(../images/monitor.png);
 }
-/* line 174, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 #how-it-works > li h3 {
   text-align: center;
 }
-/* line 177, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 #how-it-works > li ul {
   margin-left: 15px;
   margin-bottom: 0;
+}
+
+/* line 190, ../sass/screen.scss */
+.body#sign-up .container {
+  width: 350px;
+  padding-left: 570px;
+  position: relative;
+}
+/* line 194, ../sass/screen.scss */
+.body#sign-up .container:before {
+  content: "";
+  position: absolute;
+  background: url(../images/globe.png);
+  width: 390px;
+  height: 342px;
+  left: 120px;
+  top: 0;
+}
+/* line 201, ../sass/screen.scss */
+.body#sign-up form input[type="text"], .body#sign-up form input[type="password"] {
+  display: block;
+}
+/* line 204, ../sass/screen.scss */
+.body#sign-up form label {
+  display: none;
 }
 
 /* ==========================================================================

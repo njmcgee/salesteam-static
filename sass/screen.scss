@@ -51,6 +51,7 @@ h1, h2, h3, h4, h5, h6 {
   color: $secondary-color; 
 }
 h2 {
+  font-size: 26px;
   margin-bottom: 30px;
 }
 h3 {
@@ -89,6 +90,9 @@ a {
     font-size: 20px;
     padding: 15px 50px;
   }
+  &.small {
+    padding: 4px 18px;
+  }
 }
 
 
@@ -112,10 +116,7 @@ body.home {
     padding-left: 470px;
     padding-bottom: 90px;
     &:before {
-      @include pseudo-absolute;
-      background: url(../images/globe.png);
-      width: 390px;
-      height: 342px;
+      @include globe;      
       left: 50px;
       top: 40px;
     }
@@ -177,14 +178,34 @@ body.home {
     ul {
       margin-left: 15px;
       margin-bottom: 0;
-      li {
-
-      }
     }
   }
 }
 
 
+// Signup  
+// =================================
+
+.body#sign-up {
+  .container {
+    width: 350px;
+    padding-left: 570px;
+    position: relative;
+    &:before {
+      @include globe;      
+      left: 120px;
+      top: 0;
+    }
+  }
+  form {
+    input[type="text"], input[type="password"] {
+      display: block;
+    }
+    label {
+      display: none;
+    }
+  }
+}
 
 @import "media-queries";
 @import "helper";
